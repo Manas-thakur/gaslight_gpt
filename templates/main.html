@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <div id="logo">
+        <a>GasLight GPT</a>
+    </div>
+    <canvas id="starsCanvas"></canvas>
+    <img id="spaceship" src="{{ url_for('static', filename='images/spaceship.png') }}" alt="Spaceship">
+    <img id="moon" src="{{ url_for('static', filename='images/moon.png') }}" alt="Moon">
+    <div class="chat-container">
+        <h1 class="title">Have Fun </h1>
+        <div id="chatbox">
+            <div class="message bot">Hello, human! Ask me anything.</div>
+        </div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">SEND</button>
+    </div>
+</body>
+</html>

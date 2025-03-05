@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#spaceship {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
+}
+
+#logo a:hover {
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #33ff33,
+                 0 0 40px #33ff33;
+}
+
+.signin-container,
+.signup-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    border-radius: 10px;
+    border: 1px solid #33ff33;
+    box-shadow: 0 0 20px rgba(51, 255, 51, 0.3);
+    width: 90%;
+    max-width: 400px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.title {
+    text-align: center;
+    color: #33ff33;
+    margin-bottom: 1.5em;
+    text-shadow: 0 0 10px rgba(51, 255, 51, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    color: #33ff33;
+    margin-bottom: 0.5em;
+}
+
+input {
+    padding: 0.8em;
+    border: 1px solid #33ff33;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgba(51, 255, 51, 0.5);
+}
+
+button {
+    padding: 1em;
+    background: #33ff33;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1em;
+}
+
+button:hover {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(51, 255, 51, 0.7);
+}
+
+#message {
+    text-align: center;
+    margin-top: 1em;
+    min-height: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .signin-container,
+    .signup-container {
+        width: 95%;
+        padding: 1.5em;
+        margin-top: 80px;
+    }
+
+    #logo {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #33FF33;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#spaceship {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 200px;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+
+/* Make sure the canvas stays in background */
+#starsCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.signin-container {
+    background: rgba(0, 51, 0, 0.9);
+    border: 4px solid #33FF33;
+    padding: 20px;
+    width: 450px;
+    height: 450px;
+    text-align: left;
+    box-shadow: 0px 0px 10px #33FF33;
+}
+
+.signin-container p{
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+.signin-container p a{
+    color: #4df7f7;
+    text-decoration:none;
+}
+
+.signin-container p a:hover{
+    text-decoration: underline;
+
+}
+
+.title {
+    font-size: 20px;
+    text-shadow: 2px 2px 0px black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    background: black;
+    color: #33FF33;
+    border: 2px solid #33FF33;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background: black;
+    color: #33FF33;
+    border: 3px solid #33FF33;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #33FF33;
+    color: black;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#logo {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+
+#logo a {
+    color: #33FF33;
+    font-size: 2em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#logo a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #9eff8d,
+                 0 0 20px #9eff8d,
+                 0 0 30px #4df7f7,
+                 0 0 40px #4df7f7,
+                 0 0 50px #4df7f7,
+                 0 0 60px #4df7f7;
+}
+
+@keyframes rotateMoon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#moon {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    bottom: 100px;
+    left: 100px;
+    z-index: 999;
+    pointer-events: none;
+    animation: rotateMoon 10s linear infinite;
+}

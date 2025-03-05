@@ -1,0 +1,40 @@
+FastAPI:
+
+Purpose: FastAPI is used to create the backend API endpoints for handling chat requests and document queries.
+Reason: FastAPI is chosen for its high performance, ease of use, and automatic generation of interactive API documentation.
+
+
+Flask:
+
+Purpose: Flask is used to handle user authentication, session management, and rendering HTML templates for the web application.
+Reason: Flask is lightweight, flexible, and easy to set up, making it suitable for handling web requests and rendering templates.
+SQLite:
+
+Purpose: SQLite is used as the database to store user information, including credentials and prompt counts.
+Reason: SQLite is a self-contained, serverless, and zero-configuration database engine, making it ideal for small to medium-sized applications.
+
+
+LangChain:
+
+Purpose: LangChain is used to integrate language models (LLMs) like DeepSeek and Qwen for generating AI responses.
+Reason: LangChain provides a unified interface for working with various LLMs, simplifying the process of integrating AI capabilities.
+HTML/CSS/JavaScript:
+
+Purpose: These technologies are used to create the frontend of the web application, including the chat interface and user authentication forms.
+Reason: HTML, CSS, and JavaScript are standard web technologies for building interactive and responsive user interfaces.
+Flask-WTF:
+
+Purpose: Flask-WTF is used for CSRF protection in forms.
+Reason: It provides easy integration of CSRF protection, enhancing the security of form submissions.
+Werkzeug:
+
+Purpose: Werkzeug is used for password hashing and verification.
+Reason: It provides secure and reliable methods for handling passwords, ensuring user data protection.
+dotenv:
+
+Purpose: dotenv is used to load environment variables from a .env file.
+Reason: It allows for easy configuration management, keeping sensitive information like secret keys out of the source code.
+Session Management:
+
+Purpose: Session management is used to track user sessions and maintain user state across requests.
+Reason: It is essential for handling user authentication and ensuring a consistent user experience.pythono

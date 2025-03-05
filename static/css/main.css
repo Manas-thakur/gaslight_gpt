@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: #33FF33;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        #spaceship {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            right: 200px;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        @keyframes rotateMoon {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        #moon {
+            position: fixed;
+            width: 150px;
+            height: 150px;
+            bottom: 100px;
+            left: 100px;
+            z-index: 999;
+            pointer-events: none;
+            animation: rotateMoon 10s linear infinite;
+        }
+        
+
+        #starsCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .chat-container {
+            background: rgba(0, 51, 0, 0.9);
+            border: 4px solid #33FF33;
+            padding: 20px;
+            width:1000px;
+            height: 800px;
+            text-align: center;
+            box-shadow: 5px 5px 10px #33FF33;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .title {
+            font-size: 20px;
+            text-shadow: 2px 2px 0px black;
+            margin-bottom: 10px;
+        }
+
+        #chatbox {
+            background: black;
+            border: 2px solid #33FF33;
+            height: 700px;
+            overflow-y: auto;
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            line-height: 20px;
+        }
+
+        .message {
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        .bot {
+            color: #ffffff;
+            text-align: left;
+            width: 70%;
+        }
+
+        .user {
+            color: cyan;
+            text-align: right;
+        }
+
+        input {
+            background: black;
+            color: #33FF33;
+            border: 2px solid #33FF33;
+            padding: 10px;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            font-size: 14px;
+            outline: none;
+            width: 100%;
+        }
+
+        button {
+            font-family: 'Press Start 2P', cursive;
+            background: black;
+            color: #33FF33;
+            border: 3px solid #33FF33;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #33FF33;
+            color: black;
+        }
+
+        #logo {
+            position: fixed;
+            left: 40px;
+            top: 30px;
+        }
+
+        #logo a {
+            color: #33FF33;
+            font-size: 2em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        #logo a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #9eff8d,
+                         0 0 20px #9eff8d,
+                         0 0 30px #4df7f7,
+                         0 0 40px #4df7f7,
+                         0 0 50px #4df7f7,
+                         0 0 60px #4df7f7;
+        }
+
+        #logoutButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: black;
+            color: #33FF33;
+            border: 3px solid #33FF33;
+            padding: 10px;
+            font-family: 'Press Start 2P', cursive;
+            cursor: pointer;
+        }
+
+        #logoutButton:hover {
+            background: #33FF33;
+            color: black;
+        }
