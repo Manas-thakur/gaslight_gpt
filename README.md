@@ -44,11 +44,15 @@ GasLight GPT is a retro-themed chatbot application that allows users to interact
 
 ## Usage
 
-1. Run the application:
+1. Run the application using Uvicorn server:
+    ```sh
+    uvicorn app:app --reload
+    ```
+   Alternatively, you can run the application directly:
     ```sh
     python app.py
     ```
-2. Open your web browser and navigate to `http://localhost:5000` to access the chatbot interface.
+2. Open your web browser and navigate to `http://localhost:8000` to access the chatbot interface (or `http://localhost:5000` if using the direct Python method).
 
 ## File Descriptions
 
