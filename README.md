@@ -48,6 +48,10 @@ GasLight GPT is a retro-themed chatbot application that allows users to interact
     ```sh
     uvicorn app:app --reload
     ```
+   For more control over the server configuration, you can specify port and host:
+    ```sh
+    uvicorn server:app --reload --port 8000 --host 0.0.0.0
+    ```
    Alternatively, you can run the application directly:
     ```sh
     python app.py
